@@ -1,0 +1,29 @@
+{
+  "name": "404",
+  "version": "1.0.0",
+  "description": "outlove.cn 404 page",
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aniyocc/404.git"
+  },
+  "keywords": [
+    "outlove",
+    "404",
+    "snow",
+    "ribbon"
+  ],
+  "author": "Aniyocc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aniyocc/404/issues"
+  },
+  "homepage": "https://github.com/Aniyocc/404#readme",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-html-minifier2": "^1.1.11",
+    "gulp-rename": "^1.4.0",
+    "gulp-uglify": "^3.0.2"
+  }
+}
