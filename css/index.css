@@ -2,12 +2,12 @@ html,
 body {
   overflow: hidden;
   margin: 0;
-  background: #000;
 }
 body {
   font-family: 'Open Sans', 'Helvetica Neue', 'Hiragino Sans GB', 'LiHei Pro',
-    Arial, sans-serif;
+  Arial, sans-serif;
   color: #333;
+  background: #000;
 }
 #wrapper {
   position: absolute;
@@ -66,4 +66,21 @@ a {
 }
 a:hover {
   color: #f33;
+}
+@-webkit-keyframes float {
+	100% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+}
+
+@keyframes float {
+	100% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+}
+.code {
+  -webkit-animation: float 1s infinite ease-in-out alternate;
+          animation: float 1s infinite ease-in-out alternate;
 }

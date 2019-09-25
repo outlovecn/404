@@ -1,6 +1,6 @@
 var snow = function() {
   if (1 == 1) {
-    var b = document.getElementById('christmasCanvas'),
+    var b = document.getElementById('snow'),
       a = b.getContext('2d'),
       d = window.innerWidth,
       c = window.innerHeight
@@ -46,4 +46,4 @@ var snow = function() {
     }, 70)
   }
 }
-snow()
+window.snow = snow

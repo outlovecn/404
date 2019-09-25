@@ -6,16 +6,29 @@
 <link rel="stylesheet" href="./css/index.css" inline>
 </head>
 <body>
+	<canvas width="1920" height="917" id="ribbon"></canvas>
+	<canvas id="snow" style="top: 0px; left: 0px; z-index: 1; position: fixed; pointer-events: none;" width="1920" height="917"></canvas>
 	<div id="wrapper">
-		<h1>404</h1>
+		<svg style="width: 300; height: 100px" viewBox="0 500 600 300" version="1.1" xmlns="http://www.w3.org/2000/svg">
+			<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+				<!-- 4 -->
+				<path class="code" d="M150,530 L150,680 L180,680 L180,720 L150,720 L150,770 L110,770 L110,720 L10,720 L10,680 L110,530 Z" stroke="#999" stroke-width="6" sketch:type="MSShapeGroup"></path>
+				<path class="code" d="M110,590 L110,680 L50,680 Z" stroke="#999" stroke-width="6" sketch:type="MSShapeGroup"></path>
+				<!-- 0 -->
+				<ellipse class="code" cx="300" cy="650" rx="80" ry="120" stroke="#999" stroke-width="6" sketch:type="MSShapeGroup" />
+				<ellipse class="code" cx="300" cy="650" rx="40" ry="80" stroke="#999" stroke-width="6" sketch:type="MSShapeGroup" />
+				<!-- 4 -->
+				<path class="code" d="M550,530 L550,680 L580,680 L580,720 L550,720 L550,770 L510,770 L510,720 L410,720 L410,680 L510,530 Z" stroke="#999" stroke-width="6" sketch:type="MSShapeGroup"></path>
+				<path class="code" d="M510,590 L510,680 L450,680 Z" stroke="#999" stroke-width="6" sketch:type="MSShapeGroup"></path>
+			</g>
+		</svg>
 		<h2>你要找的页面走丢了...</h2>
 		<p><a href="/" target="_blank">Blog</a></p>
 		<p><a href="/" target="_blank">Github</a></p>
 		<p><a href="/" target="_blank">G+</a></p>
 		<p><a href="/" target="_blank">微博</a></p>
 	</div>
-<canvas width="1920" height="917"></canvas>
-<canvas id="christmasCanvas" style="top: 0px; left: 0px; z-index: 5000; position: fixed; pointer-events: none;" width="1920" height="917"></canvas>
 <script src="./js/ribbon.js" inline></script>
 <script src="./js/snow.js" inline></script>
+<script src="./js/index.js"></script>
 </body></html>

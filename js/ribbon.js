@@ -1,12 +1,12 @@
 document.addEventListener('touchmove', function(e) {
   e.preventDefault()
 })
-var c = document.getElementsByTagName('canvas')[0],
+var c = document.getElementById('ribbon'),
   x = c.getContext('2d'),
   pr = window.devicePixelRatio || 1,
   w = window.innerWidth,
-  h = window.innerHeight,
-  f = 90,
+  h = window.innerHeight/2,
+  f = 66,
   q,
   m = Math,
   r = 0,
@@ -19,7 +19,7 @@ x.scale(pr, pr)
 x.globalAlpha = 0.6
 function i() {
   x.clearRect(0, 0, w, h)
-  q = [{ x: 0, y: h * 0.7 + f }, { x: 0, y: h * 0.7 - f }]
+  q = [{ x: 0, y: h * 0.9 + f }, { x: 0, y: h * 0.9 - f }]
   while (q[1].x < w + f) d(q[0], q[1])
 }
 function d(i, j) {
@@ -43,9 +43,8 @@ function d(i, j) {
   q[1] = { x: k, y: n }
 }
 function y(p) {
-  var t = p + (z() * 2 - 1.1) * f
+  var t = p + (z() * 2 - 1.3) * f
   return t > h || t < 0 ? y(p) : t
 }
-document.onclick = i
-document.ontouchstart = i
-i()
+
+window.ribbon = i
