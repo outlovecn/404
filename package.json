@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=https://404.outlove.cn/",
+    "build": "vite build --base=https://404.outlove.cn/ && ./deploy.sh",
     "serve": "vite preview"
   },
   "dependencies": {
