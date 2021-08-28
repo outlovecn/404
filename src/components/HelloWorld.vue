@@ -1,8 +1,8 @@
 <template>
-  <div class="wrap">
-    <img class="media img" :class="{img1: state.showImg}" alt="404" src="../assets/404.webp" />
-    <img class="media" loop alt="404" ref="animotion" src="../assets/404.gif" />
-    <h1 class="msg">{{ msg }}</h1>
+  <div class="flex flex-col h-screen select-none bg-white pt-48">
+    <img class="w-1/2 md:w-1/4 self-center absolute z-10 opacity-0 transition-opacity" :class="{'opacity-100': state.showImg}" alt="404" src="../assets/404.webp" />
+    <img class="w-1/2 md:w-1/4 self-center" loop alt="404" ref="animotion" src="../assets/404.gif" />
+    <h1 class="font-mono text-center text-xs md:text-xl mt-10">{{ msg }}</h1>
   </div>
 </template>
 
@@ -22,20 +22,4 @@ nextTick(() => {
 })
 </script>
 
-<style scoped>
-.wrap {
-  @apply flex flex-col h-screen select-none bg-white pt-48
-}
-.media {
-  @apply w-1/2 md:w-1/4 self-center
-}
-.img {
-  @apply absolute z-10 opacity-0 transition-opacity
-}
-.img1 {
-  @apply opacity-100
-}
-.msg {
-  @apply font-mono text-center text-xs md:text-xl mt-10
-}
-</style>
+<style scoped></style>
