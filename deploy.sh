@@ -6,7 +6,7 @@ ip=outlove.cn
 
 #从本地服务器复制到远程服务器
 function scp_put () {
-  scp -r ./dist/* root@$ip:/home/www/404/
+  scp -r ./dist/* root@$ip:/root/home/www/404/
 }
 
 function ssh_rm() {
@@ -14,7 +14,7 @@ function ssh_rm() {
     set time 10
     spawn ssh root@$ip
     expect "*#"
-    send "rm -rf /home/www/404/*\r"
+    send "rm -rf /root/home/www/404/*\r"
     expect "*zsh"
     send "y"
     expect "*#"
